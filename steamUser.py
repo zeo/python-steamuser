@@ -77,7 +77,6 @@ class steamUser:
             }
         }
 
-        self.user = user
         return user
 
     # Function:  getGames()

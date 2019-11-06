@@ -90,6 +90,9 @@ class steamUser:
         response = request.json()
         data = response["response"]
 
+        if not data:
+            return None, None
+
         games = []
         for game in data["games"]:
             gameObject = {
